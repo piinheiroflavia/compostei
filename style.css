@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+
+:root{
+    --cor0:#F8FFC8;
+    --cor1:#DCB76F;
+    --cor2:#BF9347;
+    --cor3:#0E2724;
+    --cor4:#355857;
+    --cor5:#1B3735; 
+
+    --font-padrao:  Arial, Verdana, Helvetica, Sans-Serif;
+    --fonte-destaque:'Yuji Syuku', serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-width: 80vh;
+    font-family: var(--font-padrao);
+    background-color: #fff;
+}
+header{
+    background-color:var(--cor3);
+    padding: 15px;
+    font-variant: small-caps; /*primeira letra maúscula*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;   
+}
+header > h1 {
+    margin: 5px 50px;
+    font-size: 2rem;
+    font-family:var(--fonte-destaque);
+    color: var(--cor0);
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+nav > a {
+    font-size: 0.9rem;
+    color:var(--cor0);
+    padding: 15px;
+    text-decoration: none;
+   transition-duration: .9s;
+}
+nav >a:hover{
+    background-color:var(--cor0);
+    border-radius: 30px;
+    color:var(--cor3);
+     
+}
+main{
+    min-width: 300px;
+    margin: auto; 
+    background-color: #fff;
+   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+    border-bottom-left-radius:10px ;*/
+    border-bottom-right-radius: 10px;
+}
+main h1{
+    color:var(--cor5);
+    font-size: 2.2rem;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    padding-left: 85px;
+    margin: 30px 0px 20px 0px;
+}
+main h2{
+    font-family:var(--fonte-destaque);
+    color:var(--cor3);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 50px;
+}
+main p{
+    margin: 15px 50px;
+    text-align: justify;
+    text-indent: 30px;
+    font-weight: normal;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+}
+.primeiro p {
+    margin: 0px 90px;
+    text-align: justify;
+    text-indent: 30px;
+}
+.primeiro img{
+    width: 50%;
+    margin: 15px 100px;
+}
+section.color{
+    padding: 50px 50px;
+    background-color: var(--cor1);
+}
+section.color :hover{
+    font-weight: bold;
+}
+.btn {
+    background-color: var(--cor3);
+    color:var(--cor0) ;
+    font-size: 0.7rem;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    transition: 0.5s;
+    float: right;
+}
+.btn:hover{
+    background-color: var(--cor4);
+    color: #fff;
+    font-weight: bolder;
+}
+aside{
+    flex-wrap: wrap;
+    columns: 2;
+    padding: 10vh;
+    padding-bottom: 10vh;
+}
+aside > h2{
+    color: var(--cor3);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 0px 30px;
+}
+.segundo ul{
+    list-style-position: inside;
+    list-style: none;
+    margin: 0px 70px;
+    font-size: 1.2rem;
+}
+li{
+    display: list-item;
+    
+}
+.parte1{
+    background-color: var(--cor5);
+  
+    display: block;
+    flex-wrap: wrap;
+     
+}
+.parte1 p{
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    font-size: 1.9rem;
+    text-align: center;    padding: 15px 0px 10px 0px;
+    flex-wrap: wrap;  
+}
+input{
+    border-radius: 5px;
+    margin: 5px 100px;
+    border: none;
+    height: 35px;
+    width: 220px;
+
+}
+.parte2{
+    color: var(--cor0);
+    background-color:var(--cor3);
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 10px;
+}
+.parte2> a{
+    font-size: 0.7rem;
+    color: var(--cor0);
+    text-decoration: none;
+}
+.parte2 a:hover{
+    color: var(--cor2);
+    text-decoration: underline;
+    font-weight: bolder;
+}
