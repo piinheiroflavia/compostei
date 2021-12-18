@@ -1,5 +1,6 @@
 var c = document.getElementsByClassName ('color')
 
-function clicar (){
-   window.alert ('ola')
+function clicar(){
+   c.innertext = 'oi'
+   c.style.background = 'pink'
 }
